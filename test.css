@@ -1,0 +1,47 @@
+body{
+background-color: #D3D3D3;
+}
+
+
+#header {
+    width: 245px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: -10px;
+    }
+    
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  width: 22%;
+  margin: 10px;
+  float:left;
+}
+
+.column img {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+/*Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
